@@ -55,6 +55,19 @@ let crazyDiff = function (x) {
 
 /* WRITE YOUR ANSWER HERE */
 
+let boundary = function (n) {
+    for (let figure = 20;figure <= 100; figure++) {
+        if (n === figure)
+        return "true"
+      }
+      if (n === 400){
+          return "true"
+      }
+      else {
+          return "false"}  
+}
+console.log(boundary (400));
+
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
