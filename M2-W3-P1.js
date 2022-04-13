@@ -158,7 +158,11 @@ const upperFirstPhrase = function(givenStr) { //phrase as param
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+const cutString = function (givenStr) {
+    return givenStr.slice(1, - 1); 
+  };
+  console.log(cutString("school"));
+  
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
