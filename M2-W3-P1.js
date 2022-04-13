@@ -162,12 +162,21 @@ const cutString = function (givenStr) {
     return givenStr.slice(1, - 1); 
   };
   console.log(cutString("school"));
-  
+
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
 /* WRITE YOUR ANSWER HERE */
+
+const giveMeRandom = function (n) {
+    const array = [];
+    for (let i = 0; i <= n; i++) {
+      array.push(Math.floor(Math.random() * 10));
+    }
+    return array;
+  };
+  console.log(giveMeRandom(3));
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
