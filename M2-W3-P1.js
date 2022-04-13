@@ -14,7 +14,7 @@ ASSIGNMENT RULES
 let Area = function (l1, l2){
     return  l1*l2
   }
-  
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 2
@@ -22,6 +22,13 @@ let Area = function (l1, l2){
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
+let crazySum = function (int1, int2) {
+    if (int1 === int2) {
+       return (int1 + int2) * 3;
+    }else  {
+        return int1 + int2
+   }
+}
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 3
