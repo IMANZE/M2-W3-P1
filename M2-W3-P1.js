@@ -121,6 +121,11 @@ console.log(check3and7(21));
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
+const reverseString = function (givenStr) {
+    return givenStr.split("").reverse("").join("");
+  };
+  console.log(reverseString("Strive"));
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 8
