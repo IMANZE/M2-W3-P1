@@ -13,9 +13,9 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
-let Area = function (l1, l2){
-    return  l1*l2
-  }
+let Area = function (l1, l2) {
+  return l1 * l2;
+};
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
@@ -25,13 +25,12 @@ let Area = function (l1, l2){
 /* WRITE YOUR ANSWER HERE */
 
 let crazySum = function (int1, int2) {
-    if (int1 === int2) {
-       return (int1 + int2) * 3
-    }else  {
-        return int1 + int2
-   }
-}
-
+  if (int1 === int2) {
+    return (int1 + int2) * 3;
+  } else {
+    return int1 + int2;
+  }
+};
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
@@ -39,15 +38,23 @@ let crazySum = function (int1, int2) {
 */
 
 /* WRITE YOUR ANSWER HERE */
-let crazyDiff = function (x) {
-    let absoluteDifference = Math.abs(x - 19)
-    if (absoluteDifference > 19){
-        return 3 * absoluteDifference
- 
-    }else {
-        return absoluteDifference
-    }
-}
+let crazyDifference = function (x) {
+  let absoluteDifference = Math.abs(x - 19);
+  if (absoluteDifference > 19) {
+    return 3 * absoluteDifference;
+  } else {
+    return absoluteDifference;
+  }
+};
+console.log(crazyDifference(50));
+
+// const crazyDiff = function (x) {
+//     if (x > 19) {
+//       return Math.abs(x - 19) * 3;
+//     } else {
+//       return Math.abs(x - 19);
+//     }
+//   };
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
@@ -56,22 +63,39 @@ let crazyDiff = function (x) {
 /* WRITE YOUR ANSWER HERE */
 
 let boundary = function (n) {
-    for (let figure = 20;figure <= 100; figure++) {
-        if (n === figure)
-        return "true"
-      }
-      if (n === 400){
-          return "true"
-      }
-      else {
-          return "false"}  
-}
-console.log(boundary (400));
+  for (let figure = 20; figure <= 100; figure++) {
+    if (n === figure) return "true";
+  }
+  if (n === 400) {
+    return "true";
+  } else {
+    return "false";
+  }
+};
+
+console.log(boundary(400));
+
+// const boundary = function (n) {
+//     if ((n > 20 && n <= 100) || n === 400) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   };
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
+const strivify = function (givenStr) {
+  if (givenStr.startsWith("Strive")) {
+    return givenStr;
+  } else {
+    return "Strive " + givenStr;
+  }
+};
+
+console.log(strivify("Hello"));
 
 /* WRITE YOUR ANSWER HERE */
 
