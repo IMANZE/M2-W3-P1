@@ -111,6 +111,11 @@ const check3and7 = function (n) {
       return false;
     }
   };
+// Ternary
+// const check3and7 = function(n) {
+//   return n >= 0 && (n % 3 === 0 || n % 7 === 0) ? true : false
+// }
+console.log(check3and7(21));
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
