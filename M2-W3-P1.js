@@ -105,12 +105,12 @@ console.log(strivify("Hello"));
 
 /* WRITE YOUR ANSWER HERE */
 const check3and7 = function (n) {
-    if (n >= 0 && (n % 3 === 0 || n % 7 === 0)) {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  if (n >= 0 && (n % 3 === 0 || n % 7 === 0)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 // Ternary
 // const check3and7 = function(n) {
 //   return n >= 0 && (n % 3 === 0 || n % 7 === 0) ? true : false
@@ -123,35 +123,36 @@ console.log(check3and7(21));
 
 /* WRITE YOUR ANSWER HERE */
 const reverseString = function (givenStr) {
-    return givenStr.split("").reverse("").join("");
-  };
-  console.log(reverseString("Strive"));
+  return givenStr.split("").reverse("").join("");
+};
+console.log(reverseString("Strive"));
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
 /* WRITE YOUR ANSWER HERE */
-const upperFirstPhrase = function(givenStr) { //phrase as param
-    let words = givenStr.split(" ")
-    let finalString = []
-    for(let i = 0; i < words.length; i++) {
-      let firstCharacter = words[i].charAt(0)
-      console.log(firstCharacter)
-      let uppercaseCharacter = firstCharacter.toUpperCase()
-      let cutString = words[i].slice(1)
-      let finalWord = uppercaseCharacter + cutString
-      finalString.push(finalWord)
-    }
-    console.log(finalString.join(""))
+const upperFirstPhrase = function (givenStr) {
+  //phrase as param
+  let words = givenStr.split(" ");
+  let finalString = [];
+  for (let i = 0; i < words.length; i++) {
+    let firstCharacter = words[i].charAt(0);
+    console.log(firstCharacter);
+    let uppercaseCharacter = firstCharacter.toUpperCase();
+    let cutString = words[i].slice(1);
+    let finalWord = uppercaseCharacter + cutString;
+    finalString.push(finalWord);
   }
-  upperFirstPhrase("i  love Ezi");
+  console.log(finalString.join(""));
+};
+upperFirstPhrase("i  love Ezi");
 
-    // One word only
-     //const upperFirst = function (str) { 
-    //   return str.charAt(0).toUpperCase() + str.slice(1);   
-    // };
-    // console.log(upperFirst("strivers"));
+// One word only
+//const upperFirst = function (str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// };
+// console.log(upperFirst("strivers"));
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
@@ -159,9 +160,9 @@ const upperFirstPhrase = function(givenStr) { //phrase as param
 
 /* WRITE YOUR ANSWER HERE */
 const cutString = function (givenStr) {
-    return givenStr.slice(1, - 1); 
-  };
-  console.log(cutString("school"));
+  return givenStr.slice(1, -1);
+};
+console.log(cutString("school"));
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
@@ -170,13 +171,13 @@ const cutString = function (givenStr) {
 /* WRITE YOUR ANSWER HERE */
 
 const giveMeRandom = function (n) {
-    const array = [];
-    for (let i = 0; i <= n; i++) {
-      array.push(Math.floor(Math.random() * 10));
-    }
-    return array;
-  };
-  console.log(giveMeRandom(3));
+  const array = [];
+  for (let i = 0; i <= n; i++) {
+    array.push(Math.floor(Math.random() * 10));
+  }
+  return array;
+};
+console.log(giveMeRandom(3));
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
