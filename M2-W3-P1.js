@@ -24,11 +24,12 @@ let Area = function (l1, l2){
 
 let crazySum = function (int1, int2) {
     if (int1 === int2) {
-       return (int1 + int2) * 3;
+       return (int1 + int2) * 3
     }else  {
         return int1 + int2
    }
 }
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 3
