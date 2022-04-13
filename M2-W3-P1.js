@@ -16,11 +16,13 @@ ASSIGNMENT RULES
 let Area = function (l1, l2){
     return  l1*l2
   }
-  
+
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+
+/* WRITE YOUR ANSWER HERE */
 
 let crazySum = function (int1, int2) {
     if (int1 === int2) {
@@ -31,14 +33,21 @@ let crazySum = function (int1, int2) {
 }
 
 
-/* WRITE YOUR ANSWER HERE */
-
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
 /* WRITE YOUR ANSWER HERE */
+let crazyDiff = function (x) {
+    let absoluteDifference = Math.abs(x - 19)
+    if (absoluteDifference > 19){
+        return 3 * absoluteDifference
+ 
+    }else {
+        return absoluteDifference
+    }
+}
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
