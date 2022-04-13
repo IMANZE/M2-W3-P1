@@ -11,7 +11,10 @@ ASSIGNMENT RULES
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
-
+let Area = function (l1, l2){
+    return  l1*l2
+  }
+  
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 2
