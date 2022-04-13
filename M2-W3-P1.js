@@ -61,7 +61,6 @@ console.log(crazyDifference(50));
 */
 
 /* WRITE YOUR ANSWER HERE */
-
 let boundary = function (n) {
   for (let figure = 20; figure <= 100; figure++) {
     if (n === figure) return "true";
@@ -87,6 +86,8 @@ console.log(boundary(400));
  Write a function called "strivify" which accepts a string as a parameter.
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
+
+/* WRITE YOUR ANSWER HERE */
 const strivify = function (givenStr) {
   if (givenStr.startsWith("Strive")) {
     return givenStr;
@@ -97,14 +98,19 @@ const strivify = function (givenStr) {
 
 console.log(strivify("Hello"));
 
-/* WRITE YOUR ANSWER HERE */
-
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
 /* WRITE YOUR ANSWER HERE */
+const check3and7 = function (n) {
+    if (n >= 0 && (n % 3 === 0 || n % 7 === 0)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
