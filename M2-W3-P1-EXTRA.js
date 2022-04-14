@@ -146,12 +146,29 @@ const loopUntil = function (x) {
   };
   
   console.log(loopUntil(6));
+  
 
 /* EXTRA 7
  Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.
 */
 
 /* WRITE YOUR ANSWER HERE */
+const average = function (arr) {
+    const numbersInArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (typeof arr[i] === "number") {
+        numbersInArr.push(arr[i]);
+      }
+    }
+    let sum = 0;
+    for (let j = 0; j < numbersInArr.length; j++) {
+      sum += numbersInArr[j];
+    }
+    return sum / numbersInArr.length;
+  };
+  
+  console.log(average(["strive", 5, 2, "4", { name: "school" }, 8, 9]));
+
 
 /* EXTRA 8
  Write a function called "longest" to find the longest string from a given array of strings.
