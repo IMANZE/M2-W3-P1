@@ -194,6 +194,17 @@ const longest = function (arr) {
 */
 
 /* WRITE YOUR ANSWER HERE */
+const antiSpam = function (emailContent) {
+    if (emailContent.includes("SPAM") || emailContent.includes("SCAM")) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+  
+  console.log(antiSpam("A SPAM MESSAGE"));
+  console.log(antiSpam("Personal invitation"));
+
 
 /* EXTRA 10
  Write a function that receives a date as a parameter and calculates the number of days passed since the given date.
