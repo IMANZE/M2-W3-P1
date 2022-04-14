@@ -211,7 +211,14 @@ const antiSpam = function (emailContent) {
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+const howManyDays = function (selectedDate) {
+    let today = new Date();
+    let difference = today - selectedDate;
+    return Math.floor(difference / (1000 * 60 * 60 * 24));
+  };
+  
+  console.log(howManyDays(new Date("2011-05-30")));
+  
 /* EXTRA 11
  Write a function called "matrixGenerator" which receives two integers, x and y, as parameters.
  The result should be a matrix of x times y with, as value, the index of the position.
