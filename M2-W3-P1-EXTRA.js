@@ -37,6 +37,36 @@ const giveMeRandom = function (n) {
 
 /* WRITE YOUR ANSWER HERE */
 
+const shoppingCart = [
+    {
+      id: 204,
+      name: "Jacket",
+      price: 40,
+      quantity: 12,
+    },
+    {
+      id: 300,
+      name: "Shoe",
+      price: 560,
+      quantity: 1,
+    },
+    {
+      id: 114,
+      name: "School Bag",
+      price: 200,
+      quantity: 17,
+    },
+  ];
+
+  let shoppingCartTotal = function () {
+      let total = 0;
+      for (let i = 0; i < shoppingCart.length; i++) {
+          total = total + shoppingCart[i].price *shoppingCart[i].quantity;
+        }
+     return total
+  }
+
+  console.log(shoppingCartTotal());
 
 /* EXTRA 3
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
