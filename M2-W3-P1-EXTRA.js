@@ -175,6 +175,18 @@ const average = function (arr) {
 */
 
 /* WRITE YOUR ANSWER HERE */
+const longest = function (arr) {
+    let longestString = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i].length > longestString.length) {
+        longestString = arr[i];
+      }
+    }
+    return longestString;
+  };
+  
+  console.log(longest(["strive", "school", "developer", "student"]));
+
 
 /* EXTRA 9
  Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
