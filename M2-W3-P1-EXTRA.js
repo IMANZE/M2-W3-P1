@@ -118,6 +118,13 @@ const maxShoppingCart = function (cart) {
 
 /* WRITE YOUR ANSWER HERE */
 
+const latestShoppingCart = function (cart) {
+    let lastItem = cart[cart.length - 1];
+    // let lastItem = cart.slice(-1);
+    return lastItem;
+  };
+console.log(latestShoppingCart(shoppingCart));
+
 /* EXTRA 6
  Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.
  The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.

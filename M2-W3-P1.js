@@ -133,7 +133,6 @@ console.log(reverseString("Strive"));
 
 /* WRITE YOUR ANSWER HERE */
 const upperFirstPhrase = function (givenStr) {
-  //phrase as param
   let words = givenStr.split(" ");
   let finalString = [];
   for (let i = 0; i < words.length; i++) {
