@@ -99,6 +99,18 @@ console.log(shoppingCart);
 
 /* WRITE YOUR ANSWER HERE */
 
+const maxShoppingCart = function (cart) {
+    let mostExpensiveItem = cart[0];
+    for (let i = 1; i < cart.length; i++) {
+      if (cart[i].price > mostExpensiveItem.price) {
+        mostExpensiveItem = cart[i];
+      }
+    }
+    return mostExpensiveItem;
+  };
+  
+  console.log(maxShoppingCart(shoppingCart));
+
 /* EXTRA 5
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
  Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
