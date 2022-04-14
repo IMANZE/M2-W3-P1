@@ -131,6 +131,21 @@ console.log(latestShoppingCart(shoppingCart));
 */
 
 /* WRITE YOUR ANSWER HERE */
+const loopUntil = function (x) {
+    let counter = 0;
+  
+    while (counter !== 3) {
+      let random = Math.floor(Math.random() * 10);
+      console.log(random);
+      if (random > x) {
+        counter++;
+      } else {
+        counter = 0;
+      }
+    }
+  };
+  
+  console.log(loopUntil(6));
 
 /* EXTRA 7
  Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.
